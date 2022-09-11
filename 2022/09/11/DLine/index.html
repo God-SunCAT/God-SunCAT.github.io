@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+    
+    <title>DLine - 冰雪薇</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    
+    
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="Dline一款可自定义故事的开源聊天类AVG游戏本程序由 异次元通讯 原玩家制作  受到 异次元通讯 启发，由原玩家BXV编写（html+css+js+java非本人常用语言，现学现卖，如有Bug实属预料之中）。 自知历史记录保存效率不高，但未想到什么高效率的web与app共用一套h5代码的方法，如果有大佬能稍作改进就更好了。 Apk为自写webview封装，是不是小的像个病毒？嘛嘛～放心啦，这么">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DLine">
+<meta property="og:url" content="http://example.com/2022/09/11/DLine/index.html">
+<meta property="og:site_name" content="冰雪薇">
+<meta property="og:description" content="Dline一款可自定义故事的开源聊天类AVG游戏本程序由 异次元通讯 原玩家制作  受到 异次元通讯 启发，由原玩家BXV编写（html+css+js+java非本人常用语言，现学现卖，如有Bug实属预料之中）。 自知历史记录保存效率不高，但未想到什么高效率的web与app共用一套h5代码的方法，如果有大佬能稍作改进就更好了。 Apk为自写webview封装，是不是小的像个病毒？嘛嘛～放心啦，这么">
+<meta property="og:locale">
+<meta property="og:image" content="http://example.com/images/pasted-2.png">
+<meta property="article:published_time" content="2022-09-11T07:28:00.000Z">
+<meta property="article:modified_time" content="2022-09-11T12:03:15.505Z">
+<meta property="article:author" content="冰雪薇">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/pasted-2.png">
+    
+<link rel="stylesheet" href="/lib/fancybox/fancybox.css">
+<link rel="stylesheet" href="/lib/justifiedGallery/justifiedGallery.min.css">
+<link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
+
+
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1662898293282">
+    
+    <link rel="stylesheet" href="/css/style.css?v=1662898293282">
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="mdui-drawer-body-left">
+    
+    <div id="nexmoe-background">
+        <div class="nexmoe-bg" style="background-image: url(/../images/default_background.webp)"></div>
+        <div class="mdui-appbar mdui-shadow-0">
+            <div class="mdui-toolbar">
+                <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+                <div class="mdui-toolbar-spacer"></div>
+                <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+                <a href="/" title="冰雪薇" class="mdui-btn mdui-btn-icon"><img src="/../images/avatar.png" alt="冰雪薇"></a>
+            </div>
+        </div>
+    </div>
+    <div id="nexmoe-header">
+        <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="冰雪薇">
+            <img src="/../images/avatar.png" alt="冰雪薇" alt="冰雪薇">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>2</div>
+        <div><span>標籤</span>0</div>
+        <div><span>類別</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/2022/09/11/AboutMe/" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="搜尋"></label>
+            </form>
+         
+    </div>
+</div>
+    
+    <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/276954336" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/God-SunCAT/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+    
+    
+
+    
+    
+    
+    <!-- 一言 -->
+
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">
+      壹言
+    </h3>
+    <div class="nexmoe-widget">
+      <ul class="hitokoto-box">
+        <li id="hitokoto_text_parent" class="hitokoto-text" hitokotoCategory="">
+          <a href="#" id="hitokoto_text">
+            
+          </a>
+          <a href="#" id="hitokoto_error_text" style="display: none;">
+            
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    let hitokotoText = document.getElementById('hitokoto_text')
+    let hitokotoErroText = document.getElementById('hitokoto_error_text')
+    let hitokotoCategory = document.getElementById('hitokoto_text_parent').getAttribute('hitokotoCategory')
+    window.onload = function () {
+      let url = 'https://v1.hitokoto.cn'
+      if (hitokotoCategory) {
+        url += '?c=' + hitokotoCategory
+      }
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          hitokotoText.innerText = "「 " + data.hitokoto + " 」 from " + data.from
+          hitokotoText.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+        })
+        .catch((reason) => {
+          console.error(11, reason)
+          hitokotoText.style.display = 'none'
+          hitokotoErroText.style.display = 'block'
+        })
+    }
+  </script>
+  
+    
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2022 冰雪薇
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        
+    </div>
+</div><!-- .nexmoe-drawer -->
+    </div>
+    <div id="nexmoe-content">
+        <div class="nexmoe-primary">
+            <div class="nexmoe-post">
+
+  <article>
+      
+          <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+              <img data-fancybox="gallery" src="/../images/default_background.webp" alt="DLine" loading="lazy">
+              <h1>DLine</h1>
+          </div>
+      
+      
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2022年09月11日</a>
+</div>
+
+      <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    
+        <a><i class="nexmoefont icon-areachart"></i>约1k字</a>
+        <a><i class="nexmoefont icon-time-circle-fill"></i>预计需要3分钟</a>
+    
+</div>
+
+      <h1 id="Dline"><a href="#Dline" class="headerlink" title="Dline"></a>Dline</h1><h5 id="一款可自定义故事的开源聊天类AVG游戏"><a href="#一款可自定义故事的开源聊天类AVG游戏" class="headerlink" title="一款可自定义故事的开源聊天类AVG游戏"></a>一款可自定义故事的开源聊天类AVG游戏</h5><p>本程序由 异次元通讯 原玩家制作</p>
+<ol>
+<li>受到 异次元通讯 启发，由原玩家BXV编写（html+css+js+java非本人常用语言，现学现卖，如有Bug实属预料之中）。</li>
+<li>自知历史记录保存效率不高，但未想到什么高效率的web与app共用一套h5代码的方法，如果有大佬能稍作改进就更好了。</li>
+<li>Apk为自写webview封装，是不是小的像个病毒？嘛嘛～放心啦，这么缺德的事情我才不干呢～</li>
+<li>webview功能完善后开源（Alpha1.0？）</li>
+<li>还差个ios版本，但本人没有mac电脑，无法使用xcode,如果有大佬能提供ios解决方案就好了（或者来个小可爱用HbuilderX封装个ipa发到apple开发者测试平台～ hx需要绑定手机，个人不习惯）。</li>
+<li>已收录剧本见仓库：<a target="_blank" rel="noopener" href="https://github.com/God-SunCAT/DLine-Story">https://github.com/God-SunCAT/DLine-Story</a></li>
+<li>剧本文件建议上传到Github后使用cdn读取（最方便方法之一），或者之间本地读取</li>
+<li>如果使用链接读取剧本，剧本过大时需等待剧本下载完毕（一般1-10s）</li>
+<li>导入剧本请点击左上角的三个横线按钮，查看动态请点击对方头像(右上角)</li>
+<li>本程序全部开源</li>
+<li><strong>交流QQ群:285047745</strong></li>
+</ol>
+<hr>
+<h5 id="Web-功能"><a href="#Web-功能" class="headerlink" title="Web 功能:"></a>Web 功能:</h5><ul>
+<li><input checked="" disabled="" type="checkbox"> [Alpha]自定义剧本</li>
+<li><input checked="" disabled="" type="checkbox"> [Can’t]剧本大小不限额</li>
+<li><input checked="" disabled="" type="checkbox"> [Alpha0.8]可通过网址或文件格式导入剧本</li>
+</ul>
+<h5 id="Android-Webview功能"><a href="#Android-Webview功能" class="headerlink" title="Android Webview功能:"></a>Android Webview功能:</h5><ul>
+<li><input checked="" disabled="" type="checkbox"> [Alpha]自定义剧本</li>
+<li><input checked="" disabled="" type="checkbox"> [Alpha0.8]可通过网址或文件格式导入剧本</li>
+<li><input checked="" disabled="" type="checkbox"> [Alpha1.0]后台消息通知</li>
+<li><input checked="" disabled="" type="checkbox"> [Alpha1.0]改善存储架构</li>
+<li>[Alpha1.1]多国语言支持</li>
+<li>[Alpha1.1]间繁体互换支持</li>
+<li>[Alpha1.1]优化Set页面</li>
+<li>[Alpha1.x]优化缓动(有没有css大佬哇)</li>
+</ul>
+<hr>
+<details>
+<summary>编写剧本需知</summary>
+<pre>
+##### 请认真读完以下内容再写剧本。
+1. 节点序号不够用请自行增加，但绝对不能断掉顺序且必须从1开始(从1-N 中间一个数都不能乱且不能少)
+2. 跳转对应节点序号，自行检查是否有错误
+3. 对白不得为空，选项可为空
+4. 如果选项为空，默认自动跳转到“选项A跳转”对应的节点序号
+5. 如果以上两者均空，“节点序号”自动加一并执行
+6. 消息类型对应： 1=对方发言 2=我方发言 3=对方发图片 4=自己发图片 5=动态 6=系统消息 7=结局(本消息不会输出)
+7. 如果消息类型未填写，默认为 1=对方发言。为1时建议不填写消息类型，以节省剧本空间
+8. 消息类型3以及4 对白填写图片所在http网址
+9. 动态仅可携带一张图片
+10. 动态携带图片格式： 月亮沉入海底，氤氲了大海的诗意[img]http://图片.com/图片.jpg
+11. 动态不携带图片则不需要"[img]"
+12. ！！！所有图片均可以以文件格式含在剧本中，以格式“[$$$图片名$$$]”编写，在剧本生成时选择对应名称的图片以及剧本一起上传即可。注：图片名不包含后缀
+13. 重要: Web版剧本以及历史记录共用 10M 空间(App无限)。所以不建议剧本包含图片(头像除外)
+14. 头像推荐尺寸: 640*640
+15. 如果剧本一定要携带图片，建议使用webp格式以达到减小占用的目的(主流浏览器均支持本格式)
+16. 剧本使用的所有图片，均可使用主流浏览器支持的任意格式yi ban
+17. 不要连续几条内容没有等待时间，否则会出现Bug(无法解决)
+18. 剧本跑完或者结局后会报错
+19. 所有列均可空，但Bug自负
+20. 接受一切Bug反馈(已标明无法解决的除外)，如果能携带解决方法就最好了
+</pre>
+</details>
+<img src="/images/pasted-2.png" width="80%">
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>博主：</strong>冰雪薇<br>
+        <strong>文章連結：</strong><a href="http://example.com/2022/09/11/DLine/" title="http:&#x2F;&#x2F;example.com&#x2F;2022&#x2F;09&#x2F;11&#x2F;DLine&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;example.com&#x2F;2022&#x2F;09&#x2F;11&#x2F;DLine&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+    
+</div>
+
+  
+      <div class="nexmoe-post-footer">
+          <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+      </div>
+  
+</div>
+            <div class="nexmoe-post-right">
+              <div class="nexmoe-fixed">
+                  <div class="nexmoe-tool"> 
+                    
+                      
+                    
+                      <a href="#nexmoe-content" class="toc-link" aria-label="回到顶部" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="nexmoe-search-space">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <input class="search-input" type="text" placeholder="搜尋" oninput="sinput();">
+                </div>
+                <a class="search-close" onclick="sclose();">×</a>
+            </div>
+            <div class="search-body"></div>
+        </div>
+    </div>
+
+    
+<script src="/lib/mdui_043tiny/mdui.js"></script>
+<script src="/lib/jquery.min.js"></script>
+<script src="/lib/justifiedGallery/jquery.justifiedGallery.min.js"></script>
+<script src="/lib/fancybox/fancybox.umd.js"></script>
+
+
+ 
+
+<script async src="/js/app.js?v=1662898293283"></script>
+
+
+
+<script>
+	$(".justified-gallery").justifiedGallery({
+		rowHeight: 160,
+		margins: 10,
+	});
+</script>
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
